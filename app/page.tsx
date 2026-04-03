@@ -699,6 +699,21 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="max-w-2xl mx-auto px-4 py-8 sm:py-12">
+        {/* Dhermi Light Rooms Branding Section */}
+        <section className="mb-16 sm:mb-24 text-center">
+          <div className="flex flex-col items-center gap-6 mb-8">
+            <img 
+              src="/Dhermi-light-rooms-logo.png" 
+              alt="Dhermi Light Rooms Logo"
+              className="h-64 sm:h-96 w-auto"
+            />
+            <p className="text-3xl sm:text-5xl font-bold text-gray-900 tracking-wide">
+              Dhermi Light Rooms Presents
+            </p>
+          </div>
+          <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-12"></div>
+        </section>
+
         {/* Hero Section */}
         <section className="text-center mb-12 sm:mb-16">
           <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
@@ -866,8 +881,16 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="border-t border-gray-200 pt-8 pb-12 text-center text-gray-600 text-sm sm:text-base">
+          <div className="mb-6 flex justify-center">
+            <img 
+              src="/Dhermi-light-rooms-logo.png" 
+              alt="Dhermi Light Rooms Logo"
+              className="h-12 sm:h-16 w-auto"
+            />
+          </div>
           <div className="mb-4">
-            <p className="font-semibold text-gray-900 mb-2">Dhermi Tourism Guide</p>
+            <p className="font-semibold text-gray-900 mb-2">Dhermi Light Rooms</p>
+            <p className="text-xs sm:text-sm mb-2">Your Gateway to the Albanian Riviera</p>
             <p>© 2026 All rights reserved. Property of LitsaiTechnologies.</p>
           </div>
           <div className="space-y-1 text-xs sm:text-sm">
