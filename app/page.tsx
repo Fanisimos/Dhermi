@@ -841,9 +841,46 @@ export default function Home() {
           </div>
         </section>
 
+        {/* QR Code Section */}
+        <section className="mb-12 sm:mb-16">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 sm:p-8 border border-blue-200">
+            <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 text-center">
+              Share This Guide
+            </h2>
+            <p className="text-gray-600 text-center mb-6 text-sm sm:text-base">
+              Scan to access this guide on your mobile device
+            </p>
+            <div className="flex justify-center">
+              <div className="bg-white p-4 rounded-lg shadow-md">
+                <img 
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://dhermilightrooms.netlify.app/" 
+                  alt="QR Code for Dhermi Tourism Guide"
+                  width={200}
+                  height={200}
+                  className="rounded"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Footer */}
         <footer className="border-t border-gray-200 pt-8 pb-12 text-center text-gray-600 text-sm sm:text-base">
-          <p>© 2024 Dhermi Tourism Guide. Discover the Albanian Riviera.</p>
+          <div className="mb-4">
+            <p className="font-semibold text-gray-900 mb-2">Dhermi Tourism Guide</p>
+            <p>© 2026 All rights reserved. Property of LitsaiTechnologies.</p>
+          </div>
+          <div className="space-y-1 text-xs sm:text-sm">
+            <p>
+              <span className="font-semibold text-gray-700">Contact:</span> contact@litsaitechnologies.com
+            </p>
+            <p>
+              <span className="font-semibold text-gray-700">Web:</span> www.litsaitechnologies.com
+            </p>
+          </div>
+          <p className="mt-4 text-xs text-gray-500">
+            Discover the beauty of the Albanian Riviera with authentic tourism guides and experiences.
+          </p>
         </footer>
       </main>
     </div>
