@@ -677,22 +677,39 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       {/* Sticky Language Switcher */}
       <div className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-        <div className="max-w-2xl mx-auto px-4 py-4 sm:py-5">
-          <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
-            {(Object.keys(flagEmojis) as Language[]).map((lang) => (
-              <button
-                key={lang}
-                onClick={() => setLanguage(lang)}
-                className={`px-3 sm:px-4 py-2 rounded-lg text-sm sm:text-base font-medium transition-all duration-200 ${
-                  language === lang
-                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                <span className="mr-2">{flagEmojis[lang]}</span>
-                {currentContent.languages[lang]}
-              </button>
-            ))}
+        <div className="max-w-2xl mx-auto px-4 py-3 sm:py-4">
+          <div className="flex items-center justify-between gap-4">
+            {/* Logo - Left Side */}
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="flex-shrink-0 transition-transform hover:scale-105"
+              aria-label="Back to top"
+            >
+              <img 
+                src="/Dhermi-light-rooms-logo.png" 
+                alt="Dhermi Light Rooms Logo"
+                className="h-10 sm:h-12 w-auto"
+              />
+            </button>
+
+            {/* Language Buttons - Right Side */}
+            <div className="flex items-center justify-center gap-1 sm:gap-2 flex-wrap">
+              {(Object.keys(flagEmojis) as Language[]).map((lang) => (
+                <button
+                  key={lang}
+                  onClick={() => setLanguage(lang)}
+                  className={`px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all duration-200 ${
+                    language === lang
+                      ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  <span className="mr-1">{flagEmojis[lang]}</span>
+                  <span className="hidden sm:inline">{currentContent.languages[lang]}</span>
+                  <span className="sm:hidden">{currentContent.languages[lang].substring(0, 2)}</span>
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -710,6 +727,19 @@ export default function Home() {
             <p className="text-3xl sm:text-5xl font-bold text-gray-900 tracking-wide">
               Dhermi Light Rooms Presents
             </p>
+            <div className="mt-4 max-w-xl">
+              <p className="text-gray-700 text-base sm:text-lg mb-4 leading-relaxed">
+                Your premier accommodation on the Albanian Riviera. Experience the beauty of Dhermi with comfort, elegance, and authentic hospitality.
+              </p>
+              <a
+                href="https://www.google.com/maps/place/SH8,+Albania/@40.0701629,19.7857198,19z/data=!3m1!4b1!4m6!3m5!1s0x135b2ecf1e64ea13:0x38828def55657ba6!8m2!3d40.0701619!4d19.7863635!16s%2Fg%2F1tj6l6v4?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-md"
+              >
+                📍 Find Us On Google Maps
+              </a>
+            </div>
           </div>
           <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-12"></div>
         </section>
