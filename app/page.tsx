@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-type Language = 'al' | 'en' | 'el' | 'it' | 'es' | 'de';
+type Language = 'al' | 'en' | 'el' | 'it' | 'es' | 'de' | 'fr';
 
 interface MapLink {
   name: string;
@@ -116,11 +116,12 @@ const content = {
       it: 'Italiano',
       es: 'Español',
       de: 'Deutsch',
+      fr: 'Français',
     },
   },
   en: {
     title: 'Dhermi (Drymades) – Albanian Riviera',
-    intro: 'Dhermi (Drymades) is one of the most stunning destinations of the Albanian Riviera, renowned for its crystal-clear turquoise waters, pristine beaches, and the unique combination of mountains and sea.',
+    intro: 'Dhermi (Drymades) is one of the most stunning destinations of the Albanian Riviera, renowned for its crystal-clear turquoise waters, large beaches, and the unique combination of mountains and sea.',
     sections: {
       introduction: {
         heading: 'Welcome to Dhermi',
@@ -224,11 +225,12 @@ const content = {
       it: 'Italiano',
       es: 'Español',
       de: 'Deutsch',
+      fr: 'Français',
     },
   },
   el: {
     title: 'Dhermi (Drymades) – Αλβανική Ριβιέρα',
-    intro: 'Το Dhermi (Drymades) είναι ένας από τους πιο εντυπωσιακούς προορισμούς της Αλβανικής Ριβιέρας, γνωστός για τα κρυστάλλινα τιρκουάζ νερά, τις πρίστινες παραλίες και το μοναδικό συνδυασμό βουνού και θάλασσας.',
+    intro: 'Το Dhermi (Drymades) είναι ένας από τους πιο εντυπωσιακούς προορισμούς της Αλβανικής Ριβιέρας, γνωστός για τα κρυστάλλινα τιρκουάζ νερά, τις μεγάλες παραλίες και το μοναδικό συνδυασμό βουνού και θάλασσας.',
     sections: {
       introduction: {
         heading: 'Καλώς ήρθατε στο Dhermi',
@@ -332,11 +334,12 @@ const content = {
       it: 'Italiano',
       es: 'Español',
       de: 'Deutsch',
+      fr: 'Français',
     },
   },
   it: {
     title: 'Dhermi (Drymades) – Riviera Albanese',
-    intro: 'Dhermi (Drymades) è una delle destinazioni più affascinanti della Riviera Albanese, rinomata per le sue acque turchesi cristalline, le spiagge incontaminate e l\'affascinante combinazione di montagne e mare.',
+    intro: 'Dhermi (Drymades) è una delle destinazioni più affascinanti della Riviera Albanese, rinomata per le sue acque turchesi cristalline, le spiagge grandi e l\'affascinante combinazione di montagne e mare.',
     sections: {
       introduction: {
         heading: 'Benvenuto a Dhermi',
@@ -440,11 +443,12 @@ const content = {
       it: 'Italiano',
       es: 'Español',
       de: 'Deutsch',
+      fr: 'Français',
     },
   },
   es: {
     title: 'Dhermi (Drymades) – Riviera Albanesa',
-    intro: 'Dhermi (Drymades) es uno de los destinos más impresionantes de la Riviera Albanesa, renombrado por sus aguas turquesas cristalinas, playas vírgenes y la combinación única de montañas y mar.',
+    intro: 'Dhermi (Drymades) es uno de los destinos más impresionantes de la Riviera Albanesa, renombrado por sus aguas turquesas cristalinas, playas grandes y la combinación única de montañas y mar.',
     sections: {
       introduction: {
         heading: 'Bienvenido a Dhermi',
@@ -548,11 +552,12 @@ const content = {
       it: 'Italiano',
       es: 'Español',
       de: 'Deutsch',
+      fr: 'Français',
     },
   },
   de: {
     title: 'Dhermi (Drymades) – Albanische Riviera',
-    intro: 'Dhermi (Drymades) ist eines der beeindruckendsten Ziele der Albanischen Riviera, berühmt für sein kristallklares türkises Wasser, unberührte Strände und die einzigartige Kombination aus Bergen und Meer.',
+    intro: 'Dhermi (Drymades) ist eines der beeindruckendsten Ziele der Albanischen Riviera, berühmt für sein kristallklares türkises Wasser, große Strände und die einzigartige Kombination aus Bergen und Meer.',
     sections: {
       introduction: {
         heading: 'Willkommen in Dhermi',
@@ -656,6 +661,116 @@ const content = {
       it: 'Italiano',
       es: 'Español',
       de: 'Deutsch',
+      fr: 'Français',
+    },
+  },
+  fr: {
+    title: 'Dhermi (Drymades) – Riviera Albanese',
+    intro: 'Dhermi (Drymades) est l\'une des destinations les plus impressionnantes de la Riviera Albanaise, réputée pour ses eaux turquoise cristallines, ses grandes plages et la combinaison unique de montagnes et de mer.',
+    sections: {
+      introduction: {
+        heading: 'Bienvenue à Dhermi',
+        content: 'Le village ne s\'est pas toujours trouvé à son emplacement actuel. Dans l\'Antiquité, il était construit près de la mer, dans la région "Megali Hora". En raison des raids de pirates et des maladies, les habitants se sont déplacés dans les collines après le 13e siècle, créant le village tel qu\'il existe aujourd\'hui.\n\nAujourd\'hui, les ruelles pavées, des dizaines d\'églises et les vues panoramiques sur la mer ionienne créent une expérience unique d\'hospitalité authentique.',
+      },
+      attractions: {
+        heading: '🏛️ Attractions & Expériences',
+        items: [
+          { 
+            title: 'Monastère de la Nativité de la Mère de Dieu (Manastiri i Shën Mërisë)',
+            desc: 'L\'un des plus anciens monuments de la région (13e-14e siècles). Les fresques de 1781 sont impressionnantes, tandis que la légende d\'un trésor caché à l\'époque ottomane ajoute une touche de mystère.',
+            mapLink: { name: 'Manastiri i Shën Mërisë', url: 'https://www.google.com/maps?q=Manastiri+i+Shën+Mërisë+Dhermi' }
+          },
+          { 
+            title: 'Monastère Sacré de Drymades (Stavridi)',
+            desc: 'Le monastère de Stavridi est l\'un des lieux les plus caractéristiques et historiquement importants de la tradition religieuse de la région, combinant beauté naturelle, tradition et spiritualité. Situé dans un endroit paisible au cœur de la nature, il offre la paix et des vues extraordinaires.\n\nSelon la tradition locale, il y a environ 400 ans, un berger de Drymades a remarqué qu\'une chèvre sauvage disparaissait chaque jour sans boire d\'eau. Après une vision divine, il a décidé de suivre l\'animal et a découvert une petite source où la chèvre buvait, ainsi qu\'une image de la Mère de Dieu (Zoe Hora—Source de Vie).',
+            mapLink: { name: 'Stavridi Monastery', url: 'https://www.google.com/maps?q=Stavridi+Monastery+Dhermi' }
+          },
+          { 
+            title: 'The Mill\'s Trail – Dhermi',
+            desc: 'Un sentier pittoresque le long d\'une rivière, idéal pour se promener à travers une végétation luxuriante. Offre de la beauté naturelle, de l\'ombre et une expérience paisible en nature.',
+            mapLink: { name: 'The Mill\'s Trail', url: 'https://www.google.com/maps?q=The+Mill\'s+Trail+Dhermi' }
+          },
+          { 
+            title: 'Vieux Village de Dhermi',
+            desc: 'Un établissement traditionnel avec des maisons en pierre, des ruelles étroites et une architecture authentique.',
+            mapLink: { name: 'Dhermi Old Village', url: 'https://www.google.com/maps?q=Dhermi+Old+Village' }
+          },
+          { 
+            title: 'Parc National de Llogara ⭐ À ne pas manquer',
+            desc: 'Un parc national impressionnant à courte distance de Dhermi, connu pour ses montagnes, son air pur et ses vues spectaculaires sur la mer ionienne. La région est idéale pour la randonnée, la photographie et une pause pour manger. Elle dispose de tavernes et restaurants traditionnels, célèbres pour leur excellente cuisine — particulièrement pour les amateurs de viande. De plus, Llogara est réputée pour le parapente.',
+            mapLink: { name: 'Llogara National Park', url: 'https://www.google.com/maps?q=Llogara+National+Park' }
+          },
+        ],
+      },
+      food: {
+        heading: '🍽️ Gastronomie & Restaurants',
+        items: [
+          { 
+            title: 'Restaurant Alevra',
+            desc: 'Cuisine traditionnelle avec des produits locaux et des saveurs authentiques.',
+            mapLink: { name: 'Alevra Restaurant', url: 'https://www.google.com/maps?q=Alevra+Restaurant+Dhermi' }
+          },
+          { 
+            title: 'Restaurant Luciano',
+            desc: 'Cuisine méditerranéenne et italienne dans une ambiance élégante.',
+            mapLink: { name: 'Luciano Restaurant', url: 'https://www.google.com/maps?q=Luciano+Restaurant+Dhermi' }
+          },
+          { 
+            title: 'Angelos Souvlaki & Grill',
+            desc: 'Un choix populaire pour une nourriture rapide et délicieuse avec des influences grecques.',
+            mapLink: { name: 'Angelos Souvlaki', url: 'https://www.google.com/maps?q=Angelos+Souvlaki+Dhermi' }
+          },
+          { 
+            title: 'Restaurant Panorama',
+            desc: 'Remarquable pour ses vues uniques et ses coucheurs de soleil spectaculaires.',
+            mapLink: { name: 'Panorama Restaurant', url: 'https://www.google.com/maps?q=Panorama+Restaurant+Dhermi' }
+          },
+        ],
+      },
+      beaches: {
+        heading: '🌊 Plages',
+        items: [
+          { 
+            title: 'Plage de Gjipe',
+            desc: 'Une plage spectaculaire avec des falaises dramatiques et une eau cristalline.',
+            mapLink: { name: 'Gjipe Beach', url: 'https://www.google.com/maps?q=Gjipe+Beach' }
+          },
+          { 
+            title: 'Plage de Saint Andreas',
+            desc: 'Paisible et préservée, idéale pour se détendre.',
+            mapLink: { name: 'Saint Andreas Beach', url: 'https://www.google.com/maps?q=Saint+Andreas+Beach+Albania' }
+          },
+          { 
+            title: 'Baie de Gramma',
+            desc: 'Une baie historique avec une eau turquoise et une beauté naturelle unique.',
+            mapLink: { name: 'Gramma Bay', url: 'https://www.google.com/maps?q=Gramma+Bay+Albania' }
+          },
+          { 
+            title: 'Plage de Jale',
+            desc: 'Une plage animée avec des beach bars et une atmosphère estivale dynamique.',
+            mapLink: { name: 'Jale Beach', url: 'https://www.google.com/maps?q=Jale+Beach' }
+          },
+        ],
+      },
+      zoeHora: {
+        heading: '🌿 Zoe Hora',
+        items: [
+          {
+            title: 'Zoe Hora',
+            desc: 'Zoe Hora est un petit établissement traditionnel sur une colline au-dessus de Dhermi, caractérisé par des maisons en pierre et des vues charmantes sur la mer ionienne. Il offre une atmosphère paisible et authentique, idéale pour ceux qui recherchent la tranquillité.',
+            mapLink: { name: 'Zoe Hora', url: 'https://www.google.com/maps?q=Zoe+Hora+Dhermi' }
+          }
+        ],
+      },
+    },
+    languages: {
+      al: 'Shqip',
+      en: 'English',
+      el: 'Ελληνικά',
+      it: 'Italiano',
+      es: 'Español',
+      de: 'Deutsch',
+      fr: 'Français',
     },
   },
 };
@@ -667,6 +782,7 @@ const flagEmojis = {
   it: '🇮🇹',
   es: '🇪🇸',
   de: '🇩🇪',
+  fr: '🇫🇷',
 };
 
 export default function Home() {
@@ -732,7 +848,7 @@ export default function Home() {
                 Your premier accommodation on the Albanian Riviera. Experience the beauty of Dhermi with comfort, elegance, and authentic hospitality.
               </p>
               <a
-                href="https://www.google.com/maps/place/SH8,+Albania/@40.0701629,19.7857198,19z/data=!3m1!4b1!4m6!3m5!1s0x135b2ecf1e64ea13:0x38828def55657ba6!8m2!3d40.0701619!4d19.7863635!16s%2Fg%2F1tj6l6v4?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
+                href="https://maps.app.goo.gl/aciPpF4RPW4BrofYA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-md"
